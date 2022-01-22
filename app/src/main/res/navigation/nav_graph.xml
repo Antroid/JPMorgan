@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SchoolsFragment">
+
+    <fragment
+        android:id="@+id/SchoolsFragment"
+        android:name="com.jp.a20220124antonmakovnycschools.fragments.SchoolsFragment"
+        android:label="@string/schools_fragment_label"
+        tools:layout="@layout/fragment_schools">
+
+        <action
+            android:id="@+id/action_SchoolsFragment_to_GradesFragment"
+            app:destination="@id/GradesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/GradesFragment"
+        android:name="com.jp.a20220124antonmakovnycschools.fragments.GradesFragment"
+        android:label="@string/grades_fragment_label"
+        tools:layout="@layout/fragment_grades">
+
+        <action
+            android:id="@+id/action_GradesFragment_to_SchoolsFragment"
+            app:destination="@id/SchoolsFragment" />
+    </fragment>
+</navigation>

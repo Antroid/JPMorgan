@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">20220124AntonMakovNYCSchools</string>
+
+    <string name="schools_fragment_label">School Fragment</string>
+    <string name="grades_fragment_label">Grades Fragment</string>
+    <string name="next">Next</string>
+
+</resources>
