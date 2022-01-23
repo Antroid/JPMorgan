@@ -1,4 +1,4 @@
-package com.jp.a20220124antonmakovnycschools.fragments;
+package com.jp.a20220124antonmakovnycschools.fragments.schools;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,22 +6,26 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.jp.a20220124antonmakovnycschools.R;
 import com.jp.a20220124antonmakovnycschools.databinding.FragmentSchoolsBinding;
+import com.jp.a20220124antonmakovnycschools.viewmodels.SchoolsViewModel;
 
-public class SchoolsFragment extends Fragment {
+import dagger.android.support.DaggerFragment;
+
+public class SchoolsFragment extends DaggerFragment {
 
     private FragmentSchoolsBinding binding;
+    private SchoolsViewModel schoolsViewModel;
 
     @Override
     public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
+            @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-
+        schoolsViewModel = new ViewModelProvider(this).get(SchoolsViewModel.class);
         binding = FragmentSchoolsBinding.inflate(inflater, container, false);
         return binding.getRoot();
 

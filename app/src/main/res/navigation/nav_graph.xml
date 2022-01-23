@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/SchoolsFragment"
-        android:name="com.jp.a20220124antonmakovnycschools.fragments.SchoolsFragment"
+        android:name="com.jp.a20220124antonmakovnycschools.fragments.schools.SchoolsFragment"
         android:label="@string/schools_fragment_label"
         tools:layout="@layout/fragment_schools">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/GradesFragment"
-        android:name="com.jp.a20220124antonmakovnycschools.fragments.GradesFragment"
+        android:name="com.jp.a20220124antonmakovnycschools.fragments.grades.GradesFragment"
         android:label="@string/grades_fragment_label"
         tools:layout="@layout/fragment_grades">
 
